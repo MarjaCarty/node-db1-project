@@ -9,7 +9,7 @@ server.use(express.json());
 server.use("/api/accounts", AccountRouter);
 
 server.get("/", (_, res) => {
-  res.json({ message: "api up" });
+  res.status(200).json({ message: "api up" });
 });
 
 module.exports = server;
